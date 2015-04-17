@@ -1,0 +1,5 @@
+<h1>Listing </h1>
+<%= @favorite %>
+
+<%= link_to 'add favorite', new_user_favorite_path(@user) %>
+<h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
