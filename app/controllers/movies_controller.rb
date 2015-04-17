@@ -8,25 +8,16 @@ class MoviesController < ApplicationController
     @movies = current_user.movies
   end
 
-  def show
-  end
-
   def new
-  end
-
-  def edit
   end
 
   def create
     @movie = current_user.movies.new(movie_params)
   end
 
-  def update
-  end
-
   def destroy
   end
-  
+
 #   private
 #   def favorite_params
 #     params.require(:user).permit(:body)
